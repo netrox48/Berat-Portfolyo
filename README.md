@@ -3,7 +3,7 @@
 Bahçeşehir Üniversitesi **GEP1316 Kodlama Okuryazarlığı** dersi kapsamında hazırladığım kişisel portfolyo sitesi. Unreal Engine ve Unity ile geliştirdiğim oyun projelerini, oynanış videolarını ve özgeçmişimi içerir.
 
 ## Canlı Site
-🔗 **GitHub Pages:** https://netrox48.github.io/depo-adin/
+🔗 **GitHub Pages:** https://netrox48.github.io/Berat-Portfolyo/
 
 ## Sayfalar
 - **`index.html`**: Kısa tanıtım, uzmanlık alanları, CV indirme ve sosyal bağlantılar
