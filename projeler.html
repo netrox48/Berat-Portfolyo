@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeler & Gameplay | Berat Akça</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-container" aria-label="Ana Gezinti Menüsü">
+            <a href="index.html" class="logo">BeratAkça.dev</a>
+            <div class="nav-controls">
+                <button id="theme-toggle" class="icon-btn" aria-label="Temayı değiştir">🌙 Karanlık</button>
+                <button id="menu-toggle" class="icon-btn menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menüyü aç">☰</button>
+            </div>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimda.html">Hakkımda</a></li>
+                <li><a href="projeler.html" class="active">Projeler</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Projelerim ve Oynanış Videolarım</h1>
+        <p>Unreal Engine ve Unity kullanarak geliştirdiğim 10 oyun projem ve oynanış kayıtlarım.</p>
+
+        <div class="filter-bar" role="search">
+            <label for="project-search" style="display:none;">Proje Ara</label>
+            <input type="text" id="project-search" placeholder="Oyun adı veya motor ara (Unreal, Unity...)" aria-label="Proje adı veya teknoloji ara">
+            <select id="project-category" aria-label="Kategoriye göre filtrele">
+                <option value="all">Tüm Projeler (10)</option>
+                <option value="unreal">Unreal Engine</option>
+                <option value="unity">Unity</option>
+            </select>
+        </div>
+
+        <section class="projects-grid" aria-label="Oyun ve Proje Listesi">
+            <!-- Oyun 1 -->
+            <article class="card project-card" data-category="unreal">
+                <div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube-nocookie.com/embed/z5uAmqJDeQM" title="Unknown Caller oynanış videosu" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <span class="badge">Unreal Engine</span>
+                    <h3>Unknown Caller</h3>
+                    <p>Bilinmeyen bir çağrıya giden bir ustanın yaşadığı gerilim ve korku dolu deneyimi konu alan birinci şahıs korku oyunu.</p>
+                    <div class="learned-box">
+                        <strong>Ne Öğrendim?</strong> Korku atmosferi kurmayı, görev odaklı etkileşimleri ve ses-ışık gerilim dengesini öğrendim.
+                    </div>
+                </div>
+                <a href="https://github.com/netrox48" target="_blank" rel="noopener noreferrer" class="btn">GitHub Profilim</a>
+            </article>
+
+            <!-- Oyun 2 -->
+            <article class="card project-card" data-category="unity">
+                <div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube-nocookie.com/embed/dOP1RgNBnJw" title="Frequency-2526 oynanış videosu" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <span class="badge">Unity • Game Jam</span>
+                    <h3>Frequency-2526</h3>
+                    <p>Bir oyun geliştirme etkinliği (Game Jam) sırasında Unity ile geliştirdiğimiz, yapay zekâyı yok etmeye dayalı bilim kurgu aksiyon oyunu.</p>
+                    <div class="learned-box">
+                        <strong>Ne Öğrendim?</strong> Kısıtlı etkinlik süresinde hızlı prototip çıkarmayı, FPS çatışma mekaniğini ve ekip içi görev dağılımını öğrendim.
+                    </div>
+                </div>
+                <a href="https://github.com/netrox48" target="_blank" rel="noopener noreferrer" class="btn">GitHub Profilim</a>
+            </article>
+
+            <!-- Oyun 3 -->
+            <article class="card project-card" data-category="unity">
+                <div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube-nocookie.com/embed/vkjt2aLxeos" title="WebGL Multiplayer çalışması videosu" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <span class="badge">Unity • Photon Fusion</span>
+                    <h3>WebGL Multiplayer Çalışması</h3>
+                    <p>Unity'de Photon Fusion kullanarak tarayıcı (WebGL) tabanlı çok oyunculu oyun geliştirme üzerine hazırladığım ağ ve sürüş prototipi.</p>
+                    <div class="learned-box">
+                        <strong>Ne Öğrendim?</strong> Photon Fusion ile oda kurma, istemci-sunucu senkronizasyonu ve WebGL derleme optimizasyonlarını öğrendim.
+                    </div>
+                </div>
+                <a href="https://github.com/netrox48" target="_blank" rel="noopener noreferrer" class="btn">GitHub Profilim</a>
+            </article>
+
+            <!-- Oyun 4 -->
+            <article class="card project-card" data-category="unreal">
+                <div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube-nocookie.com/embed/BZePteiBGX0" title="Vahşi Batı bar kavgası oynanış videosu" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <span class="badge">Unreal Engine</span>
+                    <h3>Vahşi Batı — Bar Kavgası</h3>
+                    <p>Vahşi Batı temasında geçen ve bir bar kavgasını ele alan, yakın dövüş ve aksiyon mekaniklerine odaklanan oyun çalışması.</p>
+                    <div class="learned-box">
+                        <strong>Ne Öğrendim?</strong> Yakın dövüş vuruş algılamayı, düşman yapay zekâ tepkilerini ve tematik mekân kurgusunu öğrendim.
+                    </div>
+                </div>
+                <a href="https://github.com/netrox48" target="_blank" rel="noopener noreferrer" class="btn">GitHub Profilim</a>
+            </article>
+
+            <!-- Oyun 5 -->
+            <article class="card project-card" data-category="unity">
+                <div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube-nocookie.com/embed/xuBj3tqWvDQ" title="3D Basketbol oyunu oynanış videosu" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <span class="badge">Unity</span>
+                    <h3>3D Basketbol Oyunu</h3>
+                    <p>Unity ile geliştirilmiş, farklı toplar ve hareketli engeller eşliğinde isabetli atışlarla puan toplamaya dayalı basketbol oyunu.</p>
+                    <div class="learned-box">
+                        <strong>Ne Öğrendim?</strong> Atış fiziği hesaplamalarını, hareketli engel zamanlamasını ve oyun içi skor döngüsünü öğrendim.
+                    </div>
+                </div>
+                <a href="https://github.com/netrox48" target="_blank" rel="noopener noreferrer" class="btn">GitHub Profilim</a>
+            </article>
+
+            <!-- Oyun 6 -->
+            <article class="card project-card" data-category="unreal">
+                <div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube-nocookie.com/embed/sknofwdJV9A" title="Unreal Engine labirent oyunu videosu" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <span class="badge">Unreal Engine</span>
+                    <h3>Labirent Oyunu</h3>
+                    <p>Unreal Engine ile oluşturulan; süre sınırı içinde çıkış yolunu bulmaya ve engelleri aşmaya dayalı labirent oyunu.</p>
+                    <div class="learned-box">
+                        <strong>Ne Öğrendim?</strong> Seviye yönlendirmesini, geri sayım sayacı yönetimini ve kapı/tetikleyici mekaniklerini öğrendim.
+                    </div>
+                </div>
+                <a href="https://github.com/netrox48" target="_blank" rel="noopener noreferrer" class="btn">GitHub Profilim</a>
+            </article>
+
+            <!-- Oyun 7 -->
+            <article class="card project-card" data-category="unity">
+                <div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube-nocookie.com/embed/0rthqgrsNSc" title="Unity UI sistemleri çalışması videosu" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <span class="badge">Unity • UI/UX</span>
+                    <h3>Unity UI Sistemleri Çalışması</h3>
+                    <p>Unity üzerinde kullanıcı arayüzü (UI) bileşenlerinin, panellerin ve etkileşimli menü geçişlerinin nasıl çalıştığını gösterdiğim proje.</p>
+                    <div class="learned-box">
+                        <strong>Ne Öğrendim?</strong> Canvas ölçeklendirmeyi, buton olaylarını ve dinamik bilgi kartı arayüzleri kurmayı öğrendim.
+                    </div>
+                </div>
+                <a href="https://github.com/netrox48" target="_blank" rel="noopener noreferrer" class="btn">GitHub Profilim</a>
+            </article>
+
+            <!-- Oyun 8 -->
+            <article class="card project-card" data-category="unreal">
+                <div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube-nocookie.com/embed/UBIvYLTEsWs" title="İlk Unreal oyunum Endless Runner videosu" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <span class="badge">Unreal Engine</span>
+                    <h3>İlk Unreal Oyunum — Endless Runner</h3>
+                    <p>Unreal Engine öğrenme sürecimde geliştirdiğim ilk proje olan, platformlar üzerinde engellerden kaçarak ilerlenen sonsuz koşu (endless runner) oyunu.</p>
+                    <div class="learned-box">
+                        <strong>Ne Öğrendim?</strong> Blueprint temel mantığını, karakter kontrolünü, çarpışma olaylarını ve temel oyun döngüsünü öğrendim.
+                    </div>
+                </div>
+                <a href="https://github.com/netrox48" target="_blank" rel="noopener noreferrer" class="btn">GitHub Profilim</a>
+            </article>
+
+            <!-- Oyun 9 -->
+            <article class="card project-card" data-category="unity">
+                <div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube-nocookie.com/embed/IseA8nP_JGU" title="Blast / Collapse Puzzle prototipi videosu" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <span class="badge">Unity • Staj Case Çalışması</span>
+                    <h3>Blast / Collapse Puzzle Prototipi</h3>
+                    <p>Good Job Games yaz stajı başvurusu kapsamında verilen case çalışması için geliştirdiğim 10×12 (M=10, N=12) boyutunda ve 6 renkli (K=6) blast puzzle prototipi. Grup büyüklüğüne göre (1–4, 5–7, 8–9, 10+) ikon değişimi, komşu blok patlatma ve yukarıdan yeni blok spawn etme döngüsü üzerine çalıştım.</p>
+                    <div class="learned-box">
+                        <strong>Ne Öğrendim?</strong> Grid tabanlı tahta (board) yönetimini, komşu grup algılama algoritmalarını ve grup büyüklüğüne bağlı görsel geri bildirim sistemini öğrendim.
+                    </div>
+                </div>
+                <a href="https://github.com/netrox48" target="_blank" rel="noopener noreferrer" class="btn">GitHub Profilim</a>
+            </article>
+
+            <!-- Oyun 10 -->
+            <article class="card project-card" data-category="unreal">
+                <div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube-nocookie.com/embed/65SXW0wPpx8" title="Floodline ciddi oyun projesi videosu" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <span class="badge">Unreal Engine • Serious Game</span>
+                    <h3>Floodline (BEM SAR Corporation)</h3>
+                    <p>"Serious Games" dersimiz kapsamında ekip arkadaşlarımla Unreal Engine kullanarak geliştirdiğimiz, uzaylı istilası altındaki sular altında kalmış bir şehirde geçen arama-kurtarma oyunu. Oyuncu; UFO ışıklarından ve Walker düşmanlarından kaçınarak, ana gemiye bağlı küçük tekneyi de kullanıp mahsur kalan insanları süresi dolmadan kurtarmaya çalışır.</p>
+                    <p><strong>Projede Katkım:</strong> Oyun geliştiricisi olarak temel oynanış mekaniklerinin ve sistemlerin hayata geçirilmesinde görev aldım; ekip arkadaşlarım Efe ve Ömer Lekesiz ile birlikte atmosferik ve gerilim dolu bir deneyim kurguladık.</p>
+                    <div class="learned-box">
+                        <strong>Ne Öğrendim?</strong> Çoklu araç (ana gemi ve bağlı küçük tekne) geçiş mekaniklerini, zaman baskısı altında kurtarma döngüsünü ve ekip içi iş birliğini öğrendim.
+                    </div>
+                </div>
+                <a href="https://github.com/netrox48" target="_blank" rel="noopener noreferrer" class="btn">GitHub Profilim</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Berat Akça — GEP1316 Kodlama Okuryazarlığı Portfolyosu</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

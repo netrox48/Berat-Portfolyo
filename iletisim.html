@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | Berat Akça</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-container" aria-label="Ana Gezinti Menüsü">
+            <a href="index.html" class="logo">BeratAkça.dev</a>
+            <div class="nav-controls">
+                <button id="theme-toggle" class="icon-btn" aria-label="Temayı değiştir">🌙 Karanlık</button>
+                <button id="menu-toggle" class="icon-btn menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menüyü aç">☰</button>
+            </div>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimda.html">Hakkımda</a></li>
+                <li><a href="projeler.html">Projeler</a></li>
+                <li><a href="iletisim.html" class="active">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card" aria-labelledby="contact-title">
+            <h1 id="contact-title">İletişim</h1>
+            <p>Oyun projelerim hakkında soru sormak veya iş birliği için aşağıdaki formu ya da profesyonel bağlantılarımı kullanabilirsiniz.</p>
+
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Adınız Soyadınız *</label>
+                    <input type="text" id="name" name="name" required placeholder="Örn: Ayşe Yılmaz">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-posta Adresiniz *</label>
+                    <input type="email" id="email" name="email" required placeholder="ornek@eposta.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mesajınız *</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Mesajınızı buraya yazınız..."></textarea>
+                </div>
+
+                <div class="privacy-note">
+                    <strong>Gizlilik ve Veri Aydınlatması:</strong> Bu form yalnızca tarayıcı tarafında doğrulama amacıyla çalışır; girdiğiniz veriler herhangi bir sunucuya kaydedilmez, üçüncü taraf izleyici (analytics/çerez) kullanılmaz. Lütfen T.C. kimlik numarası, telefon veya açık adres gibi hassas kişisel verilerinizi paylaşmayınız.
+                </div>
+
+                <button type="submit" class="btn">Mesajı Gönder</button>
+                <div id="form-feedback" class="form-feedback" role="alert"></div>
+            </form>
+        </section>
+
+        <section class="card" aria-labelledby="social-title">
+            <h2 id="social-title">Özgeçmiş ve Profesyonel Bağlantılar</h2>
+            <p>Kod depolarıma, profesyonel profilime ve özgeçmişime aşağıdaki bağlantılardan ulaşabilirsiniz:</p>
+            <div class="hero-actions">
+                <a href="Berat_Akca_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn">CV İndir (PDF)</a>
+                <a href="https://github.com/netrox48" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub (netrox48)</a>
+                <a href="https://www.linkedin.com/in/ba-interactive/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">LinkedIn (ba-interactive)</a>
+                <a href="mailto:akcaberat48@gmail.com" class="btn btn-outline">E-posta Gönder</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Berat Akça — GEP1316 Kodlama Okuryazarlığı Portfolyosu</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
